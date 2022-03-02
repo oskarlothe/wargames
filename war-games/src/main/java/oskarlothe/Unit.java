@@ -42,6 +42,6 @@ public abstract class Unit {
     abstract int getResistBonus();
 
     public String toString() {
-        return "Name: " + this.name + " Health: " + this.health + " Attack: " + this.attack + " Armor: " + this.armor;
+        return this.name + this.health + this.attack + this.armor;
     }
 }
