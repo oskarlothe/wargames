@@ -1,10 +1,10 @@
 package oskarlothe;
 
 public abstract class Unit {
-    private String name;
-    private int health;
-    private int attack;
-    private int armor;
+    protected String name;
+    protected int health;
+    protected int attack;
+    protected int armor;
 
     public Unit(String name, int health, int attack, int armor) {
         this.name = name;
@@ -34,10 +34,14 @@ public abstract class Unit {
     }
 
     public void attack(Unit opponent) {
-        opponent.setHealth(opponent.health - (this.attack + this.getAttackBonus) + (opponent.armor + opponent.getResistBonus));
+        opponent.setHealth(opponent.getHealth() - (this.attack + this.getAttackBonus()) + (opponent.getArmor() + opponent.getResistBonus()));
     }
 
     abstract int getAttackBonus();
 
     abstract int getResistBonus();
+
+    public String toString() {
+        return "Name: " + this.name + " Health: " + this.health + " Attack: " + this.attack + " Armor: " + this.armor;
+    }
 }
