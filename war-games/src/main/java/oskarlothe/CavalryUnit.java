@@ -12,6 +12,10 @@ public class CavalryUnit extends Unit {
         this.hasAttacked = false;
     }
 
+    public CavalryUnit(String name, int health, int attack, int armor) {
+        super(name, health, attack, armor);
+    }
+
     public void attack(Unit opponent) {
         super.attack(opponent);
         this.hasAttacked = true;

@@ -1,5 +1,7 @@
 package oskarlothe;
 
+import java.util.Random;
+
 public class Battle {
     private Army armyOne;
     private Army armyTwo;
@@ -31,6 +33,19 @@ public class Battle {
             return this.armyOne;
         }
         return this.armyTwo;
+    }
+
+    public Army silumate2() {
+        while (this.armyOne.getAllUnits().size() > 0 && this.armyTwo.getAllUnits().size() > 0) {
+            Army rdArmy;
+            Random rd = new Random();
+            if (rd.nextBoolean()) {
+                rdArmy = this.armyOne;
+            } else {
+                rdArmy = this.armyTwo;
+            }
+            rdArmy
+        }
     }
 
     public void printActionDetails(Unit unit1, Unit unit2) {
