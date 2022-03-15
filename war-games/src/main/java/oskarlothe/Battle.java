@@ -44,7 +44,7 @@ public class Battle {
             } else {
                 rdArmy = this.armyTwo;
             }
-            rdArmy
+            
         }
     }
 
