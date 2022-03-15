@@ -10,7 +10,7 @@ public class InfantryUnit extends Unit {
     /**
      * Creates an instance of the class.
      * @param name The name of the unit
-     * @param health The starting health of the unit
+     * @param health The initial health of the unit
      */
     public InfantryUnit(String name, int health) {
         super(name, health, 15, 10);

@@ -13,7 +13,7 @@ public class RangedUnit extends Unit {
      * Creates an object of the class.
      * The ranged unit has an attack damage of 15 and an amor of 8.
      * @param name The name of the unit
-     * @param health The health of the unit
+     * @param health The initial health of the unit
      */
     public RangedUnit(String name, int health) {
         super(name, health, 15, 8);
@@ -38,6 +38,7 @@ public class RangedUnit extends Unit {
      * Returns the attack bonus for the unit.
      * @return An integer representing the attack bonus.
      */
+    @Override
     public int getAttackBonus() {
         return attackBonus;
     }
@@ -47,6 +48,7 @@ public class RangedUnit extends Unit {
      * This resist bonus will change according to the times the unit has been attacked.
      * @return An integer representing the current resist bonus.
      */
+    @Override
     public int getResistBonus() {
         return resistBonus - attackedCount * 2;
     }
