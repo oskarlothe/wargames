@@ -10,6 +10,13 @@ public abstract class Unit {
     private int attack;
     private int armor;
 
+    /**
+     * Creates an instance of the class.
+     * @param name The name of the unit
+     * @param health The initial health of the unit
+     * @param attack The attack damage of the unit
+     * @param armor The armor of the unit
+     */
     public Unit(String name, int health, int attack, int armor) {
         this.name = name; // represents the name of the unit
         this.health = health; // represents the health of the unit
