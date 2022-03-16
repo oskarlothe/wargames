@@ -63,7 +63,7 @@ public class App
         }
 
         /**
-         * Prints details about each army
+         * Prints details about each army.
          */
         System.out.println(armyOne.getAllUnits().size());
         System.out.println(armyTwo.getAllUnits().size());

@@ -88,7 +88,7 @@ public abstract class Unit {
     abstract int getAttackBonus();
 
     /**
-     * An abstract method that will return the resistbonus of the unit based on a unique formula for that unit.
+     * A method that will return the resist bonus for the spesific instace of Unit class.
      * 
      * @return An integer that represents the resistbonus for the unit
      */
