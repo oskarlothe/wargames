@@ -12,6 +12,7 @@ public class CavalryUnit extends Unit {
     /**
      * Creates an instance of the class.
      * The cavalry unit has an attack damage of 20 and an armor of 12.
+     * 
      * @param name The name of the unit
      * @param health The initial health of the unit
      */
@@ -25,6 +26,7 @@ public class CavalryUnit extends Unit {
     /**
      * An alternative constructor which allows two more parameters.
      * Used by the subclass CommanderUnit for instance.
+     * 
      * @param name The name of the unit
      * @param health The initial health of the unit
      * @param attack The attack damage of the unit
@@ -34,10 +36,6 @@ public class CavalryUnit extends Unit {
         super(name, health, attack, armor);
     }
 
-    /**
-     * Overrides the attack() method of class Unit in order to update the hasAttacked boolean.
-     * @param opponent The targeted opponent
-     */
     @Override
     public void attack(Unit opponent) {
         super.attack(opponent);
@@ -46,6 +44,7 @@ public class CavalryUnit extends Unit {
 
     /**
      * Overrides the getAttackBonus() method of class Unit in order to return a unique attack bonus for this unit.
+     * 
      * @return The current attack bonus for the unit
      */
     public int getAttackBonus() {
@@ -58,6 +57,7 @@ public class CavalryUnit extends Unit {
 
     /**
      * Returns the resist bonus for the unit.
+     * 
      * @return The resist bonus
      */
     public int getResistBonus() {

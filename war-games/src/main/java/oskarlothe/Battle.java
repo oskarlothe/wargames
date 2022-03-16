@@ -58,6 +58,7 @@ public class Battle {
      * that units from one army can attack the other army several times in a row
      * without being attack itself.
      * The simulation ends when one of the armies is defeated.
+     * 
      * @return The army that won the battle
      */
     public Army simulate2() {
@@ -110,6 +111,7 @@ public class Battle {
     /**
      * Prints out details about an attack where both units attack each other.
      * Poorly written and not used in the latest simulate method.
+     * 
      * @param unit1 Unit from one of the armies
      * @param unit2 Unit from the other army
      */
@@ -122,6 +124,7 @@ public class Battle {
 
     /**
      * Prints out details about an attack.
+     * 
      * @param attacker The unit that attacks
      * @param victim The unit that is being attacked
      */
@@ -132,6 +135,7 @@ public class Battle {
 
     /**
      * Overrides the toString() method from Object class
+     * 
      * @return Returns a string representation of the fields
      */
     @Override

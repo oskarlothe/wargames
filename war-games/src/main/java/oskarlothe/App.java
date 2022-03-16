@@ -9,7 +9,8 @@ import java.util.Scanner;
 public class App 
 {
     /**
-     * The main method that runs the application
+     * The main method that runs the application.
+     * 
      * @param args
      */
     public static void main( String[] args )

@@ -12,6 +12,7 @@ public abstract class Unit {
 
     /**
      * Creates an instance of the class.
+     * 
      * @param name The name of the unit
      * @param health The initial health of the unit
      * @param attack The attack damage of the unit
@@ -26,6 +27,7 @@ public abstract class Unit {
 
     /**
      * Returns the given name of the unit object.
+     * 
      * @return The name
      */
     public String getName() {
@@ -34,6 +36,7 @@ public abstract class Unit {
 
     /**
      * Returns the current health of the unit object.
+     * 
      * @return The health
      */
     public int getHealth() {
@@ -42,6 +45,7 @@ public abstract class Unit {
 
     /**
      * Returns the attackdamage of the unit object.
+     * 
      * @return The attackdamage
      */
     public int getAttack() {
@@ -50,6 +54,7 @@ public abstract class Unit {
 
     /**
      * Returns the armor of the unit object.
+     * 
      * @return The armor
      */
     public int getArmor() {
@@ -58,6 +63,7 @@ public abstract class Unit {
 
     /**
      * Sets the health of a unit. Usefull for combat between units.
+     * 
      * @param health An integer that represents the health of the unit
      */
     public void setHealth(int health) {
@@ -67,6 +73,7 @@ public abstract class Unit {
     /**
      * Makes a unit attack another.
      * The formula calls the setHealth method on the given opponent, such as only the opponent will take damage.
+     * 
      * @param opponent Another object of class Unit that will be the target for the attack
      */
     public void attack(Unit opponent) {
@@ -75,12 +82,14 @@ public abstract class Unit {
 
     /**
      * An abstract method that will return the attackbonus of the unit based on a unique formula for that unit.
+     * 
      * @return An integer that represents the attackbonus for the unit
      */
     abstract int getAttackBonus();
 
     /**
      * An abstract method that will return the resistbonus of the unit based on a unique formula for that unit.
+     * 
      * @return An integer that represents the resistbonus for the unit
      */
     abstract int getResistBonus();

@@ -13,7 +13,7 @@ public class Army {
 
     /**
      * Creates an instance of the class.
-     * Instantly creates an emtpy arraylist
+     * Instantly creates an empty arraylist that can hold instances of Unit class.
      * 
      * @param name The name of the army
      */
@@ -23,7 +23,7 @@ public class Army {
     }
 
     /**
-     * Returns the name of the army
+     * Returns the name of the army.
      * 
      * @return The name of the army
      */
@@ -33,7 +33,7 @@ public class Army {
 
     /**
      * Returns all the units of the army in order for other objects to get this
-     * information
+     * information.
      * 
      * @return The arraylist of the army
      */
@@ -45,6 +45,7 @@ public class Army {
      * Adds a unit to the army.
      * Note that this method does not create a new instance of a Unit, but rather
      * adds an existing one to the arraylist.
+     * 
      * @param unit The unit that will be put into the army
      */
     public void addUnit(Unit unit) {
@@ -54,6 +55,7 @@ public class Army {
     /**
      * Adds a whole arraylist of units to the army.
      * Convenient for merging two armies together to one.
+     * 
      * @param units An arraylist containing objects of class Unit
      */
     public void addAll(ArrayList<Unit> units) {
@@ -63,7 +65,8 @@ public class Army {
     }
 
     /**
-     * Removes a spesific unit from the army
+     * Removes a spesific unit from the army.
+     * 
      * @param unit The specified Unit that is wished removed
      */
     public void remove(Unit unit) {
@@ -71,7 +74,8 @@ public class Army {
     }
 
     /**
-     * Checks whether the army current has any units
+     * Checks whether the army current has any units.
+     * 
      * @return True if unit(s) exists
      */
     public boolean hasUnits() {
@@ -84,6 +88,7 @@ public class Army {
     /**
      * Returns a random unit from the army as long as any currently exists.
      * Returns null if no unit is found.
+     * 
      * @return A random unit from the arraylist
      */
     public Unit getRandom() {
@@ -95,7 +100,8 @@ public class Army {
     }
 
     /**
-     * Overrides the toString() method from Object class
+     * Overrides the toString() method from Object class.
+     * 
      * @return Object to string
      */
     @Override
@@ -104,7 +110,8 @@ public class Army {
     }
 
     /**
-     * Overrides the equals() method from Object class
+     * Overrides the equals() method from Object class.
+     * 
      * @param o The object that is wished to be compared
      * @return True if the object matches to this one
      */
@@ -123,7 +130,8 @@ public class Army {
     }
 
     /**
-     * Overrides the hashCode() method from Object class
+     * Overrides the hashCode() method from Object class.
+     * 
      * @return An integer representing the hashCode for this instance
      */
     @Override

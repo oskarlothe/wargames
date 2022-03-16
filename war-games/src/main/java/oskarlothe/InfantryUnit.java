@@ -9,6 +9,7 @@ public class InfantryUnit extends Unit {
 
     /**
      * Creates an instance of the class.
+     * 
      * @param name The name of the unit
      * @param health The initial health of the unit
      */
@@ -18,10 +19,6 @@ public class InfantryUnit extends Unit {
         resistBonus = 1;
     }
 
-    /**
-     * Returns the attack bonus.
-     * @return An integer representing the attackbonus of the unit.
-     */
     @Override
     public int getAttackBonus() {
         return attackBonus;
@@ -29,6 +26,7 @@ public class InfantryUnit extends Unit {
 
     /**
      * Returns the resist bonus.
+     * 
      * @return An integer representing the resist bonus
      */
     @Override
