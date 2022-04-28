@@ -80,5 +80,6 @@ public class App
         sc.nextLine();
         Army result = battle.simulate2();
         System.out.println(result.getName() + " has won the battle!");
+        sc.close();
     }
 }
